@@ -1,5 +1,7 @@
 package CyrilMlb;
 
+import junit.framework.*;
+
 /**
  * Unit test for simple App.
  */
