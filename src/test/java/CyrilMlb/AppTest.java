@@ -29,6 +29,6 @@ public class AppTest
      */
     public void testApp()
     {
-        Assertions.assertThat(true).isTrue();
+        assert Assertions.assertThat(true).isTrue();
     }
 }
