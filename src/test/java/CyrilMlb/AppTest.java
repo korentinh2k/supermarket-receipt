@@ -1,11 +1,13 @@
 package CyrilMlb;
 
-import junit.framework.*;
+import static org.junit.Assert.*; // Allows you to use directly assert methods, such as assertTrue(...), assertNull(...)
 
+import org.junit.Test; // for @Test
+import org.junit.Before; // for @Before
 /**
  * Unit test for simple App.
  */
-public class AppTest extends @Test {
+public class AppTest extends @Test{
     /**
      * Create the test case
      *
@@ -13,7 +15,7 @@ public class AppTest extends @Test {
      */
     public AppTest( String testName )
     {
-        super( testName );
+	super( testName );
     }
 
     /**
