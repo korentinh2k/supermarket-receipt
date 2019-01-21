@@ -5,9 +5,7 @@ import junit.framework.*;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends @Test
-{
+public class AppTest extends @Test {
     /**
      * Create the test case
      *
