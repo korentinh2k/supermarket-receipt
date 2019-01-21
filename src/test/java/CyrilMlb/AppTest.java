@@ -1,9 +1,5 @@
 package CyrilMlb;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-
 /**
  * Unit test for simple App.
  */
@@ -33,6 +29,6 @@ public class AppTest
      */
     public void testApp()
     {
-        Assertions.assertThat(true).isTrue()
+        Assertions.assertThat(true).isTrue();
     }
 }
