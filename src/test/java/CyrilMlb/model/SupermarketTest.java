@@ -1,6 +1,7 @@
 package CyrilMlb;
 
 import org.junit.jupiter.api.Test;
+import org.assertj.core.api.Assertions;
 
 public class SupermarketTest {
 
@@ -20,6 +21,6 @@ public class SupermarketTest {
 
         Receipt receipt = teller.checksOutArticlesFrom(cart);
 
-        // Todo: complete this test
+        Assertions.assertThat(receipt.getTotalPrice()).as("Price for 2.5kg of apples.").isEqualTo(2.5*1.99);
     }
 }
