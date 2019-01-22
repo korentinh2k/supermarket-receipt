@@ -1,1 +1,13 @@
+CyrilMlb/Discount.class
 CyrilMlb/App.class
+CyrilMlb/ProductUnit.class
+CyrilMlb/ProductQuantity.class
+CyrilMlb/ReceiptPrinter.class
+CyrilMlb/SupermarketCatalog.class
+CyrilMlb/Product.class
+CyrilMlb/ShoppingCart.class
+CyrilMlb/SpecialOfferType.class
+CyrilMlb/Offer.class
+CyrilMlb/ReceiptItem.class
+CyrilMlb/Receipt.class
+CyrilMlb/Teller.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CyrilMlb.AppTest" time="0.092" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CyrilMlb.AppTest" time="0.061" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -7,7 +7,7 @@
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/cyrilmlb/supermarket-receipt/target/test-classes:/home/cyrilmlb/supermarket-receipt/target/generated-classes/cobertura:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0-M1/junit-jupiter-api-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/cyrilmlb/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0-M1/junit-platform-commons-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0-M1/junit-jupiter-engine-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0-M1/junit-platform-engine-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/home/cyrilmlb/.m2/repository/net/sourceforge/cobertura/cobertura/1.9.4.1/cobertura-1.9.4.1.jar:/home/cyrilmlb/.m2/repository/org/apache/ant/ant/1.7.0/ant-1.7.0.jar:/home/cyrilmlb/.m2/repository/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar:"/>
+    <property name="java.class.path" value="/home/cyrilmlb/supermarket-receipt/target/test-classes:/home/cyrilmlb/supermarket-receipt/target/classes:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0-M1/junit-jupiter-api-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/cyrilmlb/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0-M1/junit-platform-commons-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0-M1/junit-jupiter-engine-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0-M1/junit-platform-engine-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-9-oracle/lib"/>
-    <property name="sun.java.command" value="/home/cyrilmlb/supermarket-receipt/target/surefire/surefirebooter3322618569590520933.jar /home/cyrilmlb/supermarket-receipt/target/surefire 2019-01-22T10-35-48_390-jvmRun1 surefire14646034025049607602tmp surefire_011959644754946097055tmp"/>
+    <property name="sun.java.command" value="/home/cyrilmlb/supermarket-receipt/target/surefire/surefirebooter11660052271074028590.jar /home/cyrilmlb/supermarket-receipt/target/surefire 2019-01-22T10-56-01_940-jvmRun1 surefire2142408556873545346tmp surefire_06734642655241637370tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/cyrilmlb/supermarket-receipt/target/test-classes:/home/cyrilmlb/supermarket-receipt/target/generated-classes/cobertura:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0-M1/junit-jupiter-api-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/cyrilmlb/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0-M1/junit-platform-commons-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0-M1/junit-jupiter-engine-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0-M1/junit-platform-engine-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/home/cyrilmlb/.m2/repository/net/sourceforge/cobertura/cobertura/1.9.4.1/cobertura-1.9.4.1.jar:/home/cyrilmlb/.m2/repository/org/apache/ant/ant/1.7.0/ant-1.7.0.jar:/home/cyrilmlb/.m2/repository/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar:"/>
+    <property name="surefire.test.class.path" value="/home/cyrilmlb/supermarket-receipt/target/test-classes:/home/cyrilmlb/supermarket-receipt/target/classes:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0-M1/junit-jupiter-api-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/cyrilmlb/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0-M1/junit-platform-commons-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0-M1/junit-jupiter-engine-5.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0-M1/junit-platform-engine-1.4.0-M1.jar:/home/cyrilmlb/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/cyrilmlb"/>
     <property name="user.language" value="fr"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/cyrilmlb/supermarket-receipt/target/surefire/surefirebooter3322618569590520933.jar"/>
+    <property name="surefire.real.class.path" value="/home/cyrilmlb/supermarket-receipt/target/surefire/surefirebooter11660052271074028590.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="9.0.4+11"/>
     <property name="user.name" value="cyrilmlb"/>
@@ -57,5 +57,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="53.0"/>
   </properties>
-  <testcase name="sayTrue" classname="CyrilMlb.AppTest" time="0.087"/>
+  <testcase name="sayTrue" classname="CyrilMlb.AppTest" time="0.055"/>
 </testsuite>
