@@ -1,4 +1,4 @@
-package CyrilMlb;
+package CyrilMlb.model;
 
 public interface SupermarketCatalog {
     void addProduct(Product product, double price);

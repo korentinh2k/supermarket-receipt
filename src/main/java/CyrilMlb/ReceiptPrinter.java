@@ -1,6 +1,6 @@
 package CyrilMlb;
 
-//import CyrilMlb.model.*;
+import CyrilMlb.model.*;
 import java.util.Locale;
 
 public class ReceiptPrinter {

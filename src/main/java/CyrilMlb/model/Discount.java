@@ -1,4 +1,4 @@
-package CyrilMlb;
+package CyrilMlb.model;
 
 public class Discount {
     private final String description;

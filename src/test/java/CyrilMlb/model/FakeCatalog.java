@@ -1,4 +1,4 @@
-package CyrilMlb;
+package CyrilMlb.model;
 
 import java.util.HashMap;
 import java.util.Map;

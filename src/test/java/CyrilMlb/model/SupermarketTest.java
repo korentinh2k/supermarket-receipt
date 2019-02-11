@@ -1,4 +1,4 @@
-package CyrilMlb;
+package CyrilMlb.model;
 
 import org.junit.jupiter.api.Test;
 import org.assertj.core.api.Assertions;

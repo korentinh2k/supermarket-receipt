@@ -1,4 +1,4 @@
-package CyrilMlb;
+package CyrilMlb.model;
 
 public class ProductQuantity {
     private final Product product;
