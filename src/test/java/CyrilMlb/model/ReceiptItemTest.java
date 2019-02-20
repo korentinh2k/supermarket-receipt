@@ -38,39 +38,26 @@ public class ReceiptItemTest {
 	@Test
 	public void testReceiptItemEqualsNULL(){
         Assertions.assertThat(receiptItem.equals(null)).isFalse();
-	}
-	
-	@Test
-	public void testReceiptItemEqualsDifferentObject(){
         Assertions.assertThat(receiptItem.equals(toothbrush)).isFalse();
+        Assertions.assertThat(receiptItem.equals(receiptItem)).isTrue();
+	
+	
+		Product toothbrush2 = new Product("toothbrush", ProductUnit.Each);
+		ReceiptItem notReceiptItemTotalPrice = new ReceiptItem(toothbrush, quantity, price, totalPrice - 0.1);
+		ReceiptItem notReceiptItemPrice = new ReceiptItem(toothbrush, quantity, price + 0.5, totalPrice);
+		ReceiptItem notReceiptItemProduct = new ReceiptItem(toothbrush2, quantity, price, totalPrice);
+		ReceiptItem notReceiptItemQuantity = new ReceiptItem(toothbrush, quantity, price + 1.0, totalPrice);
+
+	    Assertions.assertThat(receiptItem.equals(notReceiptItemProduct)).isFalse();
+	    Assertions.assertThat(receiptItem.equals(notReceiptItemPrice)).isFalse();
+	    Assertions.assertThat(receiptItem.equals(notReceiptItemQuantity)).isFalse();
+	    Assertions.assertThat(receiptItem.equals(notReceiptItemTotalPrice)).isFalse();
 	}
 
-	@Test
-	public void testReceiptItemEqualsReceiptItem(){
-        Assertions.assertThat(receiptItem.equals(receiptItem)).isTrue();
-	}
-	
-	@Test
+	/*@Test
 	public void testReceiptItemEqualsClone(){
         Assertions.assertThat(receiptItem.equals(receiptItem2)).isTrue();
-	}	
-	
-	@Test
-	public void testReceiptItemEqualsDifferentReceiptItem(){	
-		Product toothbrush2 = new Product("toothbrush", ProductUnit.Each);
-
-		ReceiptItem notReceiptItem = new ReceiptItem(toothbrush2, quantity, price, totalPrice);
-        Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
-
-		notReceiptItem = new ReceiptItem(toothbrush, quantity + 1.0, price, totalPrice);
-        Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
-        
-		notReceiptItem = new ReceiptItem(toothbrush, quantity, price + 1.0, totalPrice);
-        Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
-        
-		notReceiptItem = new ReceiptItem(toothbrush, quantity, price, totalPrice + 1.0);
-        Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
-	}
+	}*/	
 	
 	@Test
 	public void testReceiptItemHashCode(){		
