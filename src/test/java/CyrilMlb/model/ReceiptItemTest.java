@@ -4,8 +4,10 @@ import CyrilMlb.model.*;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Objects;
+
 public class ReceiptItemTest {
-	private Product toothbrush = new Product(name, ProductUnit.Each);
+	private Product toothbrush = new Product("toothbrush", ProductUnit.Each);
 	private double price = 1.0;
 	private double totalPrice = 0.9;
 	private double quantity = 2.0;
@@ -29,12 +31,7 @@ public class ReceiptItemTest {
 	public void testReceiptItemGetQuantity(){	
         Assertions.assertThat(receiptItem.getQuantity()).isEqualTo(quantity);	
 	}
-	
-	@Test
-	public void testReceiptItemGetTotalPrice(){	
-        Assertions.assertThat(receiptItem.getTotalPrice()).isEqualTo(totalPrice);	
-	}
-	
+
 	@Test
 	public void testReceiptItemGetTotalPrice(){	
         Assertions.assertThat(receiptItem.getTotalPrice()).isEqualTo(totalPrice);	
