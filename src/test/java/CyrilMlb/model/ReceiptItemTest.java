@@ -15,9 +15,6 @@ public class ReceiptItemTest {
 	private ReceiptItem receiptItem = new ReceiptItem(toothbrush, quantity, price, totalPrice);
 	private ReceiptItem receiptItem2 = new ReceiptItem(toothbrush, quantity, price, totalPrice);
 	
-	private Product toothbrush2 = new Product("toothbrush", ProductUnit.Each);
-	private ReceiptItem notReceiptItem = new ReceiptItem(toothbrush2, quantity + 1.0, price + 1.0, totalPrice + 1.0);
-	
 	@Test
 	public void testReceiptItemGetPrice(){	
         Assertions.assertThat(receiptItem.getPrice()).isEqualTo(price);	
@@ -59,7 +56,19 @@ public class ReceiptItemTest {
 	}	
 	
 	@Test
-	public void testReceiptItemEqualsDifferentReceiptItem(){
+	public void testReceiptItemEqualsDifferentReceiptItem(){	
+		Product toothbrush2 = new Product("toothbrush", ProductUnit.Each);
+
+		ReceiptItem notReceiptItem = new ReceiptItem(toothbrush2, quantity, price, totalPrice);
+        Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
+
+		notReceiptItem = new ReceiptItem(toothbrush, quantity + 1.0, price, totalPrice);
+        Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
+        
+		notReceiptItem = new ReceiptItem(toothbrush, quantity, price + 1.0, totalPrice);
+        Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
+        
+		notReceiptItem = new ReceiptItem(toothbrush, quantity, price, totalPrice + 1.0);
         Assertions.assertThat(receiptItem.equals(notReceiptItem)).isFalse();
 	}
 	
