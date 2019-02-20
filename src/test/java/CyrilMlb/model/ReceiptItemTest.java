@@ -46,7 +46,7 @@ public class ReceiptItemTest {
 		ReceiptItem notReceiptItemTotalPrice = new ReceiptItem(toothbrush, quantity, price, totalPrice - 0.1);
 		ReceiptItem notReceiptItemPrice = new ReceiptItem(toothbrush, quantity, price + 0.5, totalPrice);
 		ReceiptItem notReceiptItemProduct = new ReceiptItem(toothbrush2, quantity, price, totalPrice);
-		ReceiptItem notReceiptItemQuantity = new ReceiptItem(toothbrush, quantity, price + 1.0, totalPrice);
+		ReceiptItem notReceiptItemQuantity = new ReceiptItem(toothbrush, quantity + 1.0, price, totalPrice);
 
 	    Assertions.assertThat(receiptItem.equals(notReceiptItemPrice)).isFalse();
 	    Assertions.assertThat(receiptItem.equals(notReceiptItemProduct)).isFalse();
