@@ -41,7 +41,7 @@ public class ReceiptItemTest {
         Assertions.assertThat(receiptItem.equals(toothbrush)).isFalse();
         Assertions.assertThat(receiptItem.equals(receiptItem)).isTrue();
 	
-	
+
 		Product toothbrush2 = new Product("toothbrush", ProductUnit.Each);
 		ReceiptItem notReceiptItemTotalPrice = new ReceiptItem(toothbrush, quantity, price, totalPrice - 0.1);
 		ReceiptItem notReceiptItemPrice = new ReceiptItem(toothbrush, quantity, price + 0.5, totalPrice);
@@ -54,10 +54,10 @@ public class ReceiptItemTest {
 	    Assertions.assertThat(receiptItem.equals(notReceiptItemTotalPrice)).isFalse();
 	}
 
-	/*@Test
+	@Test
 	public void testReceiptItemEqualsClone(){
         Assertions.assertThat(receiptItem.equals(receiptItem2)).isTrue();
-	}*/	
+	}
 	
 	@Test
 	public void testReceiptItemHashCode(){		
